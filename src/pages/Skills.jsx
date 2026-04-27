@@ -5,7 +5,7 @@ import GradientText from '../components/GradientText';
 
 const skillCategories = [
   {
-    name: 'Languages',
+    name: 'Backend',
     skills: ['Java', 'Python', 'Golang', 'NodeJs', 'C++', 'SQL'],
   },
   {
