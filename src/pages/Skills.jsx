@@ -5,16 +5,21 @@ import GradientText from '../components/GradientText';
 
 const skillCategories = [
   {
-    name: 'Backend',
-    skills: ['Java', 'Spring Boot', 'Python', 'Django', 'Flask', 'Go', 'Node.js'],
+    name: 'Languages',
+    skills: ['Java', 'Python', 'Golang', 'NodeJs', 'C++', 'SQL'],
   },
   {
     name: 'Frontend',
-    skills: ['React', 'React Native', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'HTML5/CSS3'],
+    skills: ['React', 'React Native', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'HTML/CSS'],
+  },
+  {
+    name: 'Frameworks',
+    skills: ['SpringBoot', 'Django', 'ExpressJs', 'FastAPI', 'Flask', 'vite'],
+
   },
   {
     name: 'Architecture & DevOps',
-    skills: ['Event-Driven Arch', 'Layered Arch', 'Kafka', 'Docker', 'CI/CD', 'AWS', 'Azure'],
+    skills: ['Event-Driven Arch', 'Layered Arch', 'Microservices', 'Modular Monoliths', 'RESTful API Design', 'Kafka', 'Docker', 'CI/CD', 'AWS', 'Azure'],
   },
   {
     name: 'Database',
@@ -43,7 +48,7 @@ const Skills = () => {
               <h3 className="text-xl font-bold mb-6 text-primary">{category.name}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map(skill => (
-                  <span 
+                  <span
                     key={skill}
                     className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-foreground/80 hover:bg-primary/20 hover:border-primary/50 transition-all cursor-default"
                   >
